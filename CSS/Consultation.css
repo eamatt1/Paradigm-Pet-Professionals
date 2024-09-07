@@ -1,0 +1,31 @@
+.modal-header {
+    background-color: #003b6d;
+    color: white;
+}
+
+.modal-footer .btn-primary {
+    background-color: #ffb302;
+    border-color: #ffb302;
+}
+
+.modal-footer .btn-primary:hover {
+    background-color: #ffa600;
+    border-color: #ffa600;
+}
+
+.modal-content {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.form-control.is-invalid {
+    border-color: #dc3545;
+}
+
+.form-control.is-valid {
+    border-color: #28a745;
+}
+
+textarea {
+    resize: none;
+}

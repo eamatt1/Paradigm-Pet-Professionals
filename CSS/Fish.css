@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.section {
+    margin: 30px 0;
+}
+
+.section h4 {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+}
+
+.pet-images img {
+    max-width: 100%;
+    height: auto;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultation Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Button to trigger the modal -->
+    <div class="container mt-5 text-center">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#consultationModal">
+            Request Consultation
+        </button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="consultationModal" tabindex="-1" aria-labelledby="consultationModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="consultationModalLabel">Consultation Form</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="consultationForm" novalidate>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
+                                <div class="invalid-feedback">First name is required.</div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
+                                <div class="invalid-feedback">Last name is required.</div>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="username@gmail.com" required>
+                            <div class="invalid-feedback">Please provide a valid email.</div>
+                        </div>
+                        <div class="row g-3 mt-3">
+                            <div class="col-md-6">
+                                <label for="timeZone" class="form-label">Time Zone</label>
+                                <select id="timeZone" class="form-select" required>
+                                    <option value="">Choose...</option>
+                                    <option value="EST">EST</option>
+                                    <option value="CST">CST</option>
+                                    <option value="PST">PST</option>
+                                </select>
+                                <div class="invalid-feedback">Please select a time zone.</div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="petType" class="form-label">Pet Type</label>
+                                <select id="petType" class="form-select" required>
+                                    <option value="">Choose...</option>
+                                    <option value="Cat">Cat</option>
+                                    <option value="Dog">Dog</option>
+                                    <option value="Small Animal">Small Animal</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                                <div class="invalid-feedback">Please select a pet type.</div>
+                            </div>
+                        </div>
+                        <div class="row g-3 mt-3">
+                            <div class="col-md-6">
+                                <label for="petName" class="form-label">Pet Name</label>
+                                <input type="text" class="form-control" id="petName" placeholder="Pet Name" required>
+                                <div class="invalid-feedback">Pet name is required.</div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="petAge" class="form-label">Pet Age</label>
+                                <input type="number" class="form-control" id="petAge" placeholder="Pet Age" required>
+                                <div class="invalid-feedback">Pet age is required.</div>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <label for="subject" class="form-label">Subject (Optional)</label>
+                            <textarea class="form-control" id="subject" rows="4" placeholder="Provide any additional information or details you would like to share..."></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary" id="saveChangesButton">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
