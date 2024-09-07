@@ -3,106 +3,134 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cats Section - Care and Evolution</title>
+    <title>Comprehensive Care and Management of Cats</title>
+    <!-- Bootstrap CSS Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link to your custom CSS -->
+    <link rel="stylesheet" href="../CSS/Cats.css">
 </head>
 
 <body>
-    <!-- Cats Section -->
-    <div class="container mt-5">
-        <!-- Black Box for Header -->
-        <div class="section-header text-center">
-            <h2>The Evolution and Care of Domestic Cats: From Ancient Companions to Modern Day Pets</h2>
-            <p>Learn about the history, developmental stages, nutritional needs, and answers to common cat care questions.</p>
-        </div>
 
-        <!-- Historical Context -->
-        <div class="content-section">
-            <h4>Historical Context of Cat Domestication</h4>
-            <p>Cats were first domesticated around 7500 BCE in Western Asia and have evolved to become the second most popular domestic pet in the United States today. There are over 60 documented cat breeds, each with unique characteristics, but the foundational aspects of care and diet are universally important across all breeds.</p>
-        </div>
-
-        <!-- Developmental Stages and Nutritional Needs -->
-        <div class="content-section">
-            <h4>Developmental Stages and Nutritional Needs</h4>
-            <!-- Zero to Four Weeks -->
-            <h5>Zero to Four Weeks:</h5>
-            <ul>
-                <li><strong>Importance of Nursing:</strong> The queen (a female cat that is pregnant or nursing) directly nursing her kittens is optimal. Monitoring growth rates is essential for proper development.</li>
-                <li><strong>Intervention:</strong> If kittens do not grow as expected due to factors such as sibling competition or illness, intervention via bottle or tube feeding may be required.</li>
-            </ul>
-
-            <!-- Four Weeks to One Year -->
-            <h5>Four Weeks to One Year:</h5>
-            <ul>
-                <li><strong>Introduction to Solid Foods:</strong> At three to four weeks, kittens transition to solid food. It is recommended to introduce wet kitten food gradually, at six to nine ounces per day.</li>
-                <li><strong>Nutritional Optimization:</strong> Use foods designed for kittens to provide necessary nutrients for their growth and energy.</li>
-            </ul>
-
-            <!-- One Year to Seven Years -->
-            <h5>One Year to Seven Years:</h5>
-            <ul>
-                <li><strong>Reduced Nutrient Needs:</strong> As cats mature into adulthood, their nutrient requirements decrease.</li>
-                <li><strong>Controlled Feeding:</strong> Provide meals at set times to prevent overeating and obesity.</li>
-            </ul>
-
-            <!-- Seven Years and Older -->
-            <h5>Seven Years and Older:</h5>
-            <ul>
-                <li><strong>Senior Dietary Needs:</strong> Focus on lower fat intake but higher quality protein. Choose foods that specify protein sources (e.g., "salmon" instead of generic "fish").</li>
+<!-- Navigation Links in Cats.html -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="home.html">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="Consultation.html">Consultation</a></li>
+                <li class="nav-item"><a class="nav-link" href="Birds.html">Birds</a></li>
+                <li class="nav-item"><a class="nav-link active" href="Cats.html">Cats</a></li> <!-- Cats Button -->
+                <li class="nav-item"><a class="nav-link" href="Dogs.html">Dogs</a></li>
+                <li class="nav-item"><a class="nav-link" href="Fish.html">Fish</a></li>
+                <li class="nav-item"><a class="nav-link" href="SmallPets.html">Small Pets</a></li>
             </ul>
         </div>
+    </div>
+</nav>
 
-        <!-- Frequently Asked Questions -->
-        <div class="content-section">
-            <h4>Frequently Asked Questions</h4>
+<!-- Hero Section -->
+<div class="hero bg-info text-white text-center py-5">
+    <h2>Comprehensive Care and Management of Cats</h2>
+    <p>Learn about cat evolution, care, nutrition, and more.</p>
+</div>
 
-            <div class="accordion" id="catFAQ">
-                <!-- Managing Fleas -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button">
-                            Managing Fleas
-                        </button>
-                    </h2>
-                    <div class="accordion-collapse collapse show" id="collapseOne" aria-labelledby="headingOne">
-                        <div class="accordion-body">
-                            To combat fleas, use a flea-specific shampoo and follow the instructions carefully. If irritation occurs, stop use and consult a veterinarian.
-                        </div>
-                    </div>
+<!-- Main Content Section -->
+<section id="content" class="container my-5">
+    <h3>Introduction to Cat Domestication</h3>
+    <p>Cats were first domesticated around 7500 BCE in Western Asia and have evolved to become the second most popular domestic pet in the United States today. There are over 60 documented cat breeds, each with unique characteristics, but the foundational aspects of care and diet are universally important across all breeds.</p>
+
+    <h3>Developmental Stages and Nutritional Needs</h3>
+    <h5>Zero to Four Weeks:</h5>
+    <ul>
+        <li><strong>Importance of Nursing:</strong> The queen (a female cat that is pregnant or nursing) directly nursing her kittens is optimal. Monitoring growth rates is essential for proper development.</li>
+        <li><strong>Intervention:</strong> If kittens do not grow as expected due to factors such as sibling competition or illness, intervention via bottle or tube feeding may be required.</li>
+    </ul>
+
+    <h5>Four Weeks to One Year:</h5>
+    <ul>
+        <li><strong>Introduction to Solid Foods:</strong> At three to four weeks, kittens transition to solid food. It is recommended to introduce wet kitten food gradually, at six to nine ounces per day.</li>
+        <li><strong>Nutritional Optimization:</strong> Use foods designed for kittens to provide necessary nutrients for their growth and energy.</li>
+    </ul>
+
+    <h5>One Year to Seven Years:</h5>
+    <ul>
+        <li><strong>Reduced Nutrient Needs:</strong> As cats mature into adulthood, their nutrient requirements decrease.</li>
+        <li><strong>Controlled Feeding:</strong> Provide meals at set times to prevent overeating and obesity.</li>
+    </ul>
+
+    <h5>Seven Years and Older:</h5>
+    <ul>
+        <li><strong>Senior Dietary Needs:</strong> Focus on lower fat intake but higher quality protein. Choose foods that specify protein sources (e.g., "salmon" instead of generic "fish").</li>
+    </ul>
+
+    <h3>Frequently Asked Questions</h3>
+    <div class="accordion" id="catFAQ">
+        <!-- Managing Fleas -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    How do I manage fleas on my cat?
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#catFAQ">
+                <div class="accordion-body">
+                    To combat fleas, use a flea-specific shampoo and follow the instructions carefully. If irritation occurs, stop use and consult a veterinarian.
                 </div>
+            </div>
+        </div>
 
-                <!-- Appropriate Cat Foods -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button">
-                            Appropriate Cat Foods
-                        </button>
-                    </h2>
-                    <div class="accordion-collapse collapse" id="collapseTwo" aria-labelledby="headingTwo">
-                        <div class="accordion-body">
-                            Use high-quality commercial cat foods tailored to your cat's age, health, and physical capabilities. Avoid human foods like chocolate, onions, and bones that could cause harm.
-                        </div>
-                    </div>
+        <!-- Appropriate Cat Foods -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    What kind of food should I give my cat?
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#catFAQ">
+                <div class="accordion-body">
+                    Use high-quality commercial cat foods tailored to your cat's age, health, and physical capabilities. Avoid human foods like chocolate, onions, and bones that could cause harm.
                 </div>
+            </div>
+        </div>
 
-                <!-- Assessing Obesity -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button">
-                            Assessing Obesity
-                        </button>
-                    </h2>
-                    <div class="accordion-collapse collapse" id="collapseThree" aria-labelledby="headingThree">
-                        <div class="accordion-body">
-                            A healthy cat should have a visible waist and slight abdominal tuck. Ribs should be palpable with minimal fat covering. For an accurate assessment, consult your veterinarian.
-                        </div>
-                    </div>
+        <!-- Assessing Obesity -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    How do I assess if my cat is overweight?
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#catFAQ">
+                <div class="accordion-body">
+                    A healthy cat should have a visible waist and slight abdominal tuck. Ribs should be palpable with minimal fat covering. For an accurate assessment, consult your veterinarian.
                 </div>
             </div>
         </div>
     </div>
+</section>
+
+<!-- Cat Images Section -->
+<section id="cat-images" class="container my-5 text-center">
+    <h4>Our Beautiful Cats</h4>
+    <img src="../IMAGE/CAT1.jpeg" alt="Cat 1" class="img-fluid">
+    <img src="../IMAGE/CAT2.jpeg" alt="Cat 2" class="img-fluid">
+</section>
+
+<!-- Footer Section -->
+<footer class="bg-primary text-white text-center p-4">
+    <p>&copy; 2024 Paradigm Pet Professionals. All rights reserved.</p>
+    <p>Follow us on <a href="https://facebook.com" class="text-white">Facebook</a> | <a href="https://twitter.com" class="text-white">Twitter</a> | <a href="https://instagram.com" class="text-white">Instagram</a></p>
+</footer>
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>

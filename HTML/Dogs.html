@@ -3,126 +3,135 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dogs Section - Comprehensive Care and Management</title>
+    <title>Comprehensive Care and Management of Dogs</title>
+    <!-- Bootstrap CSS Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link to your custom CSS -->
+    <link rel="stylesheet" href="../CSS/Dogs.css">
 </head>
 
 <body>
-    <!-- Dogs Section -->
-    <div class="container mt-5">
-        <!-- Black Box for Header -->
-        <div class="section-header text-center">
-            <h2>Comprehensive Care for Domestic Dogs: From Adoption to Health Management</h2>
-            <p>Explore the evolution, lifecycle nutrition, exercise needs, grooming, and health management practices for your dog.</p>
-        </div>
 
-        <!-- Introduction to Canine Domestication -->
-        <div class="content-section">
-            <h4>Introduction to Canine Domestication</h4>
-            <p>The domestic dog is a highly social species, with over 300 breeds recognized globally by the World Canine Organization. The relationship between dogs and their owners is mutually beneficial, providing substantial social and health advantages. Numerous studies have confirmed that owning a dog can reduce feelings of loneliness and promote physical health, including lowered blood pressure and improved lipid profiles.</p>
-        </div>
-
-        <!-- Lifecycle Nutrition and Exercise -->
-        <div class="content-section">
-            <h4>Lifecycle Nutrition and Exercise</h4>
-            <!-- Dietary Management -->
-            <h5>Dietary Management Across Life Stages:</h5>
-            <ul>
-                <li><strong>Puppies:</strong> Initially, puppies should nurse for the first two months before transitioning to three solid meals daily from three to six months of age. Reduce meal frequency to two meals daily from six months to one year, eventually transitioning to one meal per day.</li>
-                <li><strong>Hydration:</strong> Dogs' bodies are composed of 60-70% water. A decrease of just 10% can lead to illness, and a 15% loss can be fatal. Ensure continuous access to clean water to maintain hydration and overall health.</li>
-            </ul>
-
-            <!-- Exercise Recommendations -->
-            <h5>Exercise Recommendations:</h5>
-            <ul>
-                <li><strong>Activity Levels:</strong> Dogs require regular physical activity to maintain healthy organ function and overall wellness. The recommended exercise duration varies by breed and size, typically 30 to 120 minutes daily. Activities may include walking, playing with toys, and other forms of physical activity.</li>
+<!-- Navigation Links in Dogs.html -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="home.html">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="Consultation.html">Consultation</a></li>
+                <li class="nav-item"><a class="nav-link" href="Birds.html">Birds</a></li>
+                <li class="nav-item"><a class="nav-link" href="Cats.html">Cats</a></li>
+                <li class="nav-item"><a class="nav-link active" href="Dogs.html">Dogs</a></li> <!-- Dogs Button -->
+                <li class="nav-item"><a class="nav-link" href="Fish.html">Fish</a></li>
+                <li class="nav-item"><a class="nav-link" href="SmallPets.html">Small Pets</a></li>
             </ul>
         </div>
+    </div>
+</nav>
 
-        <!-- Grooming and Handling -->
-        <div class="content-section">
-            <h4>Grooming and Handling</h4>
-            <!-- Routine Grooming -->
-            <h5>Routine Grooming:</h5>
-            <ul>
-                <li><strong>Brushing:</strong> Regular brushing is crucial to manage shedding and prevent matting. Post-exposure to natural environments means checking for ticks and fleas is essential.</li>
-                <li><strong>Bathing:</strong> Use only dog-appropriate soap to avoid skin irritation and ensure all soap is thoroughly rinsed off. Be gentle and considerate during the bathing process.</li>
-            </ul>
+<!-- Hero Section -->
+<div class="hero bg-info text-white text-center py-5">
+    <h2>Comprehensive Care and Management of Dogs</h2>
+    <p>Learn about dog adoption, nutrition, exercise, and grooming.</p>
+</div>
 
-            <!-- Safe Handling Techniques -->
-            <h5>Safe Handling Techniques:</h5>
-            <ul>
-                <li><strong>Small Dogs:</strong> Support should be provided with one hand under the chest and the forearm supporting the back.</li>
-                <li><strong>Large Dogs:</strong> When lifting, use both arms to support the chest and rear, positioning your arms perpendicular to the dog's body for better stability.</li>
-            </ul>
-        </div>
+<!-- Main Content Section -->
+<section id="content" class="container my-5">
+    <h3>Introduction to Canine Domestication</h3>
+    <p>The domestic dog is a highly social species, with over 300 breeds recognized globally by the World Canine Organization. The relationship between dogs and their owners is mutually beneficial, providing substantial social and health advantages. Numerous studies have confirmed that owning a dog can reduce feelings of loneliness and promote physical health, including lowered blood pressure and improved lipid profiles.</p>
 
-        <!-- Health Management -->
-        <div class="content-section">
-            <h4>Health Management: Vaccinations & Medications</h4>
-            <ul>
-                <li><strong>Core Vaccinations:</strong> Essential vaccines include rabies, hepatitis, and parvovirus. Additional vaccines, like Bordetella bronchiseptica for kennel cough, may be recommended based on environmental exposure risks.</li>
-                <li><strong>Veterinary Consultations:</strong> Regular check-ups with a veterinarian are crucial to tailor health management strategies specific to the dog's needs and living conditions.</li>
-            </ul>
-        </div>
+    <h3>Lifecycle Nutrition and Exercise</h3>
+    <h5>Dietary Management Across Life Stages:</h5>
+    <ul>
+        <li><strong>Puppies:</strong> Initially, puppies should nurse for the first two months before transitioning to three solid meals daily from three to six months of age. Reduce meal frequency to two meals daily from six months to one year, eventually transitioning to one meal per day.</li>
+        <li><strong>Hydration:</strong> Dogs' bodies are composed of 60-70% water. A decrease of just 10% can lead to illness, and a 15% loss can be fatal. Ensure continuous access to clean water to maintain hydration and overall health.</li>
+    </ul>
 
-        <!-- Frequently Asked Questions -->
-        <div class="content-section">
-            <h4>Frequently Asked Questions</h4>
+    <h5>Exercise Recommendations:</h5>
+    <ul>
+        <li><strong>Activity Levels:</strong> Dogs require regular physical activity to maintain healthy organ function and overall wellness. The recommended exercise duration varies by breed and size, typically 30 to 120 minutes daily. Activities may include walking, playing with toys, and other forms of physical activity.</li>
+    </ul>
 
-            <div class="accordion" id="dogFAQ">
-                <!-- Managing Fleas -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button">
-                            Managing Fleas
-                        </button>
-                    </h2>
-                    <div class="accordion-collapse collapse show" id="collapseOne" aria-labelledby="headingOne">
-                        <div class="accordion-body">
-                            To eliminate fleas, use a flea-specific shampoo, following all instructions carefully. If irritation occurs, cease use and consult a veterinarian immediately.
-                        </div>
-                    </div>
-                </div>
+    <h3>Grooming and Handling</h3>
+    <h5>Routine Grooming:</h5>
+    <ul>
+        <li><strong>Brushing:</strong> Regular brushing is crucial to manage shedding and prevent matting. Post-exposure to natural environments means checking for ticks and fleas is essential.</li>
+        <li><strong>Bathing:</strong> Use only dog-appropriate soap to avoid skin irritation and ensure all soap is thoroughly rinsed off. Be gentle and considerate during the bathing process.</li>
+    </ul>
 
-                <!-- Optimal Nutrition -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button">
-                            Optimal Nutrition
-                        </button>
-                    </h2>
-                    <div class="accordion-collapse collapse" id="collapseTwo" aria-labelledby="headingTwo">
-                        <div class="accordion-body">
-                            Feed high-quality commercial dog food appropriate for the dog's age, size, and activity level. Avoid harmful human foods and ensure constant access to fresh water.
-                        </div>
-                    </div>
-                </div>
+    <h5>Safe Handling Techniques:</h5>
+    <ul>
+        <li><strong>Small Dogs:</strong> Support should be provided with one hand under the chest and the forearm supporting the back.</li>
+        <li><strong>Large Dogs:</strong> When lifting, use both arms to support the chest and rear, positioning your arms perpendicular to the dog's body for better stability.</li>
+    </ul>
 
-                <!-- Assessing Weight -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button">
-                            Assessing Weight
-                        </button>
-                    </h2>
-                    <div class="accordion-collapse collapse" id="collapseThree" aria-labelledby="headingThree">
-                        <div class="accordion-body">
-                            Check the dog's weight by feeling the ribs, which should be palpable without excessive fat. A visible waist and slight abdominal tuck indicate a healthy weight. For precise assessments and dietary adjustments, consult with a veterinarian.
-                        </div>
-                    </div>
+    <h3>Frequently Asked Questions</h3>
+    <div class="accordion" id="dogFAQ">
+        <!-- Managing Fleas -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    How do I manage fleas on my dog?
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#dogFAQ">
+                <div class="accordion-body">
+                    To eliminate fleas, use a flea-specific shampoo, following all instructions carefully. If irritation occurs, cease use and consult a veterinarian immediately.
                 </div>
             </div>
         </div>
 
-        <!-- Dog Images Section -->
-        <div class="dog-images">
-            <h4>Our Happy Dogs</h4>
-            <img src="/mnt/data/dog.jpeg" alt="Happy Dog">
-            <img src="/mnt/data/DOG1.jpeg" alt="Dog in Flowers">
+        <!-- Optimal Nutrition -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    What kind of food should I give my dog?
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#dogFAQ">
+                <div class="accordion-body">
+                    Feed high-quality commercial dog food appropriate for the dog's age, size, and activity level. Avoid harmful human foods and ensure constant access to fresh water.
+                </div>
+            </div>
+        </div>
+
+        <!-- Assessing Weight -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    How do I assess if my dog is overweight?
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#dogFAQ">
+                <div class="accordion-body">
+                    Check the dog's weight by feeling the ribs, which should be palpable without excessive fat. A visible waist and slight abdominal tuck indicate a healthy weight. For precise assessments and dietary adjustments, consult with a veterinarian.
+                </div>
+            </div>
         </div>
     </div>
+</section>
+
+<!-- Dog Images Section -->
+<section id="dog-images" class="container my-5 text-center">
+    <h4>Our Happy Dogs</h4>
+    <img src="../IMAGE/dog.jpeg" alt="Happy Dog" class="img-fluid">
+    <img src="../IMAGE/DOG1.jpeg" alt="Dog in Flowers" class="img-fluid">
+</section>
+
+<!-- Footer Section -->
+<footer class="bg-primary text-white text-center p-4">
+    <p>&copy; 2024 Paradigm Pet Professionals. All rights reserved.</p>
+    <p>Follow us on <a href="https://facebook.com" class="text-white">Facebook</a> | <a href="https://twitter.com" class="text-white">Twitter</a> | <a href="https://instagram.com" class="text-white">Instagram</a></p>
+</footer>
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
