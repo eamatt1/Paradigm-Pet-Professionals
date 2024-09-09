@@ -1,50 +1,18 @@
-.section-header {
-    background-color: #000000;
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+body {
+    font-family: Arial, sans-serif;
 }
 
-.section-header h2 {
-    color: #ffffff;
+.section {
+    margin: 30px 0;
 }
 
-.content-section {
-    padding: 20px 0;
+.section h4 {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
 }
 
-.content-section p {
-    line-height: 1.8;
-}
-
-.faq-question {
-    cursor: pointer;
-}
-
-.faq-answer {
-    display: none;
-}
-
-.btn-primary {
-    background-color: #ffb302;
-    border-color: #ffb302;
-}
-
-.btn-primary:hover {
-    background-color: #ffa600;
-    border-color: #ffa600;
-}
-
-.dog-images {
-    margin-top: 20px;
-    text-align: center;
-}
-
-.dog-images img {
+.pet-images img {
     max-width: 100%;
     height: auto;
-    margin-bottom: 15px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
