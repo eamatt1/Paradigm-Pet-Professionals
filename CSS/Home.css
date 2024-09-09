@@ -30,6 +30,13 @@ nav {
     flex-wrap: wrap;
 }
 
+/* Logo Styling in Navbar */
+nav .logo img {
+    width: 80px; /* Set appropriate size for the logo */
+    height: auto;
+    margin-right: 15px;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
