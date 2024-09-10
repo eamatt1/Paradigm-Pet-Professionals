@@ -32,7 +32,7 @@
             text-decoration: underline;
         }
 
-        /* Gray color for links, buttons, and text */
+        /* Gray color for links and buttons */
         .navbar-nav .nav-link,
         .accordion-button,
         .btn-outline-primary,
@@ -58,90 +58,40 @@
             border-color: #808080; /* Gray border for accordion */
         }
 
-        h3, h4, p, li {
-            color: #808080; /* Gray for text */
-        }
-
-        /* Header logo styling */
-        header {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #808080; /* Gray color for header */
-            color: white;
-            padding: 20px;
-        }
-
-        header h1 {
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Navigation links */
-        .navbar-light .navbar-nav .nav-link {
-            color: #808080; /* Gray color */
-        }
-
-        .navbar-light .navbar-nav .nav-link:hover {
-            color: #666666; /* Darker gray on hover */
-        }
-
+        /* Form input, buttons, and hover colors */
+        .form-control,
+        .form-select,
         .btn-outline-primary {
-            color: #808080; /* Gray for search button */
-            border-color: #808080; /* Gray border for button */
+            border-color: #808080; /* Gray */
+            color: #808080;
         }
 
-        .btn-outline-primary:hover {
-            background-color: #808080; /* Gray background on hover */
+        .form-control::placeholder {
+            color: #808080; /* Gray placeholder */
+        }
+
+        .form-control:focus,
+        .form-select:focus {
             border-color: #808080;
-        }
-
-        h2, h4 {
-            color: #808080; /* Gray for headings */
+            box-shadow: none; /* Remove blue outline */
         }
     </style>
 </head>
 
 <body>
 
-<!-- Header Section -->
-<header class="p-4">
-    <div>
-        <h1>Paradigm Pet Professionals</h1>
-        <p>Comprehensive Care and Management of Small Pets</p>
-    </div>
-</header>
-
-<!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html">Home</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="Consultation.html">Consultation</a></li>
-                <li class="nav-item"><a class="nav-link" href="Cats.html">Cats</a></li>
-                <li class="nav-item"><a class="nav-link" href="Dogs.html">Dogs</a></li>
-                <li class="nav-item"><a class="nav-link" href="Birds.html">Birds</a></li>
-                <li class="nav-item"><a class="nav-link" href="Fish.html">Fish</a></li>
-                <li class="nav-item"><a class="nav-link" href="SmallPets.html">Small Pets</a></li>
-            </ul>
-            <form class="d-flex ms-auto">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-primary" type="submit">Search</button>
-            </form>
-        </div>
-    </div>
-</nav>
+<!-- Hero Section -->
+<div class="hero text-white text-center py-5">
+    <h2>Comprehensive Care and Management of Small Pets</h2>
+    <p>Learn about how to care for small pets such as hamsters, guinea pigs, and more.</p>
+</div>
 
 <!-- Main Content Section -->
 <section id="content" class="container my-5">
-    <h3>Overview of Small Pet Care and Management</h3>
-    <p>Small pets can make wonderful companions for those with limited space or time. These pets include animals such as hamsters, guinea pigs, gerbils, and more. Each pet has its own specific care requirements, from food to habitat, and we’re here to help you navigate their needs.</p>
+    <h3 style="color: #808080;">Overview of Small Pet Care and Management</h3>
+    <p style="color: #808080;">Small pets can make wonderful companions for those with limited space or time. These pets include animals such as hamsters, guinea pigs, gerbils, and more. Each pet has its own specific care requirements, from food to habitat, and we’re here to help you navigate their needs.</p>
 
-    <h3>Small Pet Resources</h3>
+    <h3 style="color: #808080;">Small Pet Resources</h3>
     <ul>
         <li><a href="https://www.animalhumanesociety.org/adoption/guinea-pig-care" target="_blank" style="color: #808080;">Guinea Pig Care</a></li>
         <li><a href="https://www.bluecross.org.uk/pet-advice/caring-your-mouse" target="_blank" style="color: #808080;">Mouse Care</a></li>
@@ -151,7 +101,7 @@
         <li><a href="https://www.pdsa.org.uk/taking-care-of-your-pet/looking-after-your-pet/small-pets/the-ideal-home-for-your-hamster" target="_blank" style="color: #808080;">Hamster Care</a></li>
     </ul>
 
-    <h3>Frequently Asked Questions</h3>
+    <h3 style="color: #808080;">Frequently Asked Questions</h3>
     <div class="accordion" id="smallPetsFAQ">
         <!-- Ferret Environment -->
         <div class="accordion-item">
