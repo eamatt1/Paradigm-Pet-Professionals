@@ -76,6 +76,17 @@ nav ul li a:hover {
     color: white;
     text-align: center;
     margin-top: 0;
+    position: relative; /* Allow absolute positioning inside the hero */
+}
+
+/* Logo Styling in the Hero Section */
+.hero .logo img {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 80px;
+    height: auto;
+    z-index: 10; /* Make sure it appears above other elements */
 }
 
 .hero h2 {
@@ -151,5 +162,12 @@ footer a:hover {
 
     .card img {
         height: auto;  /* Adjust height to auto for smaller screens */
+    }
+
+    /* Adjust logo size and placement for smaller screens */
+    .hero .logo img {
+        width: 60px; /* Reduce the size of the logo */
+        top: 10px;
+        left: 10px;
     }
 }
