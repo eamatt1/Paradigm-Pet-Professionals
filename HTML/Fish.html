@@ -11,15 +11,56 @@
     <!-- Link to your custom CSS -->
     <link rel="stylesheet" href="../CSS/Fish.css">
     <style>
-        /* Updated colors for gray theme */
+        /* Change all blue colors to gray */
+        .accordion-button {
+            background-color: #808080 !important; /* Gray background for accordion headers */
+            color: white !important; /* White text for accordion headers */
+            border: none; /* Remove any borders */
+        }
+
+        .accordion-button:hover {
+            background-color: #666666 !important; /* Darker gray on hover */
+        }
+
+        .accordion-button:not(.collapsed) {
+            color: white !important;
+            background-color: #808080 !important;
+            box-shadow: none; /* Remove box shadow on open */
+        }
+
+        .accordion-body {
+            background-color: #f4f4f4; /* Light gray background for accordion content */
+            color: black; /* Black text for content */
+        }
+
+        /* Style for the search button and inputs */
+        .form-control {
+            border-color: #808080 !important; /* Gray border for input */
+        }
+
+        .btn-outline-primary {
+            color: #808080 !important; /* Change text color to gray */
+            border-color: #808080 !important; /* Gray border */
+        }
+
+        .btn-outline-primary:hover {
+            background-color: #666666 !important; /* Darker gray background on hover */
+            border-color: #666666 !important; /* Darker gray border */
+            color: white !important; /* White text on hover */
+        }
+
+        /* Gray background for header and footer */
         .hero {
             background-color: #808080; /* Gray color for top box */
             color: white;
+            text-align: center;
+            padding: 20px;
         }
 
         footer {
             background-color: #808080; /* Gray color for footer */
             color: white;
+            padding: 20px;
         }
 
         footer a {
@@ -28,35 +69,6 @@
 
         footer a:hover {
             text-decoration: underline;
-        }
-
-        .accordion-button {
-            background-color: #808080; /* Gray background for accordion buttons */
-            color: black; /* Black text color */
-        }
-
-        .accordion-button:hover {
-            background-color: #666666; /* Slightly darker gray on hover */
-        }
-
-        .accordion-button:not(.collapsed) {
-            color: black; /* Keep black color when accordion is open */
-        }
-
-        .accordion-item {
-            background-color: #d3d3d3; /* Light gray background for accordion box */
-        }
-
-        /* Styling for search button */
-        .btn-outline-primary {
-            color: #333;
-            border-color: #808080;
-        }
-
-        .btn-outline-primary:hover {
-            background-color: #808080;
-            color: white;
-            border-color: #808080;
         }
     </style>
 </head>
@@ -171,7 +183,7 @@
 </section>
 
 <!-- Footer Section -->
-<footer class="text-white text-center p-4">
+<footer class="text-white text-center p-4" style="background-color: #808080;">
     <p>&copy; 2024 Paradigm Pet Professionals. All rights reserved.</p>
     <p>Follow us on <a href="https://facebook.com" class="text-white">Facebook</a> | <a href="https://twitter.com" class="text-white">Twitter</a> | <a href="https://instagram.com" class="text-white">Instagram</a></p>
 </footer>
