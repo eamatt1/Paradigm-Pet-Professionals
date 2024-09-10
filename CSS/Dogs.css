@@ -1,5 +1,7 @@
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .section {
@@ -15,4 +17,21 @@ body {
 .pet-images img {
     max-width: 100%;
     height: auto;
+}
+
+/* Hero Section Styling */
+.hero {
+    background-color: #003b6d; /* Same color as footer */
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
 }
