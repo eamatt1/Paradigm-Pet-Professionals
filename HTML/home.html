@@ -13,16 +13,18 @@
     <style>
         /* Custom style for the logo */
         .logo img {
-            width: 80px;
+            width: 100px;  /* Make the logo larger */
             height: auto;
             margin-right: 20px;
+            object-fit: cover;  /* Ensure the image fills the space */
         }
 
         /* Adjust the header to allow the logo to fit in the top left */
         header {
             background-color: #003b6d;
             color: white;
-            padding: 20px;
+            padding: 0;  /* Remove extra padding */
+            height: 100px;  /* Adjust height to match the logo */
             display: flex;
             align-items: center;
             justify-content: flex-start;
