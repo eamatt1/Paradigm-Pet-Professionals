@@ -50,6 +50,15 @@
             color: white;
         }
 
+        /* Change Home button color to dark gray */
+        .navbar-brand {
+            color: #4d4d4d !important; /* Dark gray color for Home button */
+        }
+
+        .navbar-brand:hover {
+            color: #666666 !important; /* Darker gray on hover */
+        }
+
         .btn-outline-primary {
             border-color: #808080;
             color: #808080;
@@ -71,6 +80,24 @@
         #content ul li a:hover {
             color: #666666; /* Darker gray on hover */
             text-decoration: underline;
+        }
+
+        /* Dark gray colors for FAQ accordion */
+        .accordion-button {
+            background-color: #4d4d4d !important; /* Dark gray for question titles */
+            color: white;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: #666666 !important; /* Darker gray when opened */
+        }
+
+        .accordion-button:focus {
+            box-shadow: none; /* Remove focus box-shadow */
+        }
+
+        .accordion-body {
+            background-color: #f8f9fa; /* Light background for answers */
         }
     </style>
 </head>
