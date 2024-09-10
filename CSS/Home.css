@@ -9,10 +9,10 @@ body {
 
 /* Header Styling */
 header {
-    background-color: #808080;  /* Changed to gray */
+    background-color: #808080; /* Updated to gray color */
     color: white;
-    padding: 0;  /* Remove padding to fit logo snugly */
-    height: 100px;  /* Adjust height of the header to fit logo */
+    padding: 0;
+    height: 100px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -20,11 +20,11 @@ header {
 
 /* Header Logo Styling */
 .logo img {
-    height: 100%;  /* Make the logo fit the full height of the header */
-    width: auto;  /* Maintain aspect ratio */
+    height: 100%;
+    width: auto;
     margin: 0;
     padding: 0;
-    object-fit: cover;  /* Ensure the logo covers the available space */
+    object-fit: cover;
 }
 
 /* Header Title and Subtitle Styling */
@@ -46,12 +46,6 @@ nav {
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
-}
-
-nav .logo img {
-    width: 80px; /* Set appropriate size for the logo in the navbar */
-    height: auto;
-    margin-right: 15px;
 }
 
 nav ul {
@@ -92,17 +86,17 @@ nav ul li a:hover {
     color: white;
     text-align: center;
     margin-top: 0;
-    position: relative; /* Allow absolute positioning inside the hero */
+    position: relative;
 }
 
 /* Logo Styling in the Hero Section */
 .hero .logo img {
     position: absolute;
-    top: 0;  /* Ensure no space at the top */
-    left: 0;  /* Align the logo to the left */
-    height: 100%;  /* Make the logo fill the height of the blue box */
+    top: 0;
+    left: 0;
+    height: 100%;
     width: auto;
-    z-index: 10; /* Ensure it appears above other elements */
+    z-index: 10;
 }
 
 .hero h2 {
@@ -138,8 +132,8 @@ section {
 
 .card img {
     width: 100%;
-    height: 250px;  /* Fix height for uniformity */
-    object-fit: cover;  /* Ensure the image fits within the container without distortion */
+    height: 250px;
+    object-fit: cover;
 }
 
 .card h3 {
@@ -154,7 +148,7 @@ section {
 
 /* Footer Styling */
 footer {
-    background-color: #808080;  /* Changed to gray */
+    background-color: #808080; /* Updated to gray color */
     color: white;
     text-align: center;
     padding: 20px;
@@ -177,12 +171,11 @@ footer a:hover {
     }
 
     .card img {
-        height: auto;  /* Adjust height to auto for smaller screens */
+        height: auto;
     }
 
-    /* Adjust logo size and placement for smaller screens */
     .hero .logo img {
-        width: 60px; /* Reduce the size of the logo */
+        width: 60px;
         top: 10px;
         left: 10px;
     }
