@@ -9,7 +9,7 @@ body {
 
 /* Header Styling */
 header {
-    background-color: #003b6d;
+    background-color: #808080;  /* Changed to gray */
     color: white;
     padding: 0;  /* Remove padding to fit logo snugly */
     height: 100px;  /* Adjust height of the header to fit logo */
@@ -154,7 +154,7 @@ section {
 
 /* Footer Styling */
 footer {
-    background-color: #003b6d;
+    background-color: #808080;  /* Changed to gray */
     color: white;
     text-align: center;
     padding: 20px;
