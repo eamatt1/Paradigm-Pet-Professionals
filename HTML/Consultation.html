@@ -8,51 +8,66 @@
     <title>Consultation Form | Paradigm Pet Professionals</title>
     <!-- Bootstrap CSS Link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
+    <!-- Link to your custom CSS -->
     <link rel="stylesheet" href="../CSS/Consultation.css">
     <style>
-        /* Gray background for the header and footer */
+        /* Gray background for header and footer */
         header {
-            background-color: #808080; /* Gray color */
+            background-color: #808080; /* Gray */
             color: white;
         }
 
         footer {
-            background-color: #808080; /* Gray color */
+            background-color: #808080; /* Gray */
             color: white;
         }
 
-        /* Gray button styles */
+        /* Gray buttons */
         .btn-primary {
-            background-color: #808080; /* Gray color */
+            background-color: #808080; /* Gray */
             border-color: #808080;
         }
 
-        /* Gray button hover */
         .btn-primary:hover {
             background-color: #666666; /* Darker gray */
             border-color: #666666;
         }
 
-        /* Gray links */
-        a.nav-link, .text-white {
-            color: #808080 !important; /* Gray color for links */
+        /* Gray form labels */
+        .form-label {
+            color: #808080; /* Gray */
         }
 
-        /* Gray links hover */
-        a.nav-link:hover, .text-white:hover {
-            color: #666666 !important; /* Darker gray on hover */
+        /* Gray text inputs and select elements */
+        .form-control, .form-select {
+            border-color: #808080; /* Gray border */
         }
 
-        /* Gray outline for search button */
+        /* Gray placeholder text */
+        ::placeholder {
+            color: #808080 !important;
+        }
+
+        /* Invalid feedback color to gray */
+        .invalid-feedback {
+            color: #808080 !important; /* Gray */
+        }
+
+        /* Gray background for the search box */
         .btn-outline-primary {
+            color: #808080; /* Gray */
             border-color: #808080;
-            color: #808080;
         }
 
         .btn-outline-primary:hover {
             background-color: #808080;
             color: white;
+        }
+
+        /* Gray for the search and submit button box */
+        form .btn {
+            background-color: #808080;
+            border-color: #808080;
         }
     </style>
 </head>
@@ -91,7 +106,7 @@
 
 <!-- Consultation Form Section -->
 <div class="container mt-5">
-    <h2 class="text-center">Request Consultation</h2>
+    <h2 class="text-center" style="color: #808080;">Request Consultation</h2>
     <form id="consultationForm" class="mt-4" novalidate>
         <div class="row g-3">
             <div class="col-md-6">
