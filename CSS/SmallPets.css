@@ -4,50 +4,61 @@
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    outline: none; /* Added to remove outline */
 }
 
 .section-header h2 {
     color: #ffffff;
+    outline: none; /* Added to remove outline */
 }
 
 .content-section {
     padding: 20px 0;
+    outline: none; /* Added to remove outline */
 }
 
 .content-section p {
     line-height: 1.8;
+    outline: none; /* Added to remove outline */
 }
 
 .faq-question {
     cursor: pointer;
+    outline: none; /* Added to remove outline */
 }
 
 .faq-answer {
     display: none;
+    outline: none; /* Added to remove outline */
 }
 
 .btn-primary {
     background-color: #ffb302;
     border-color: #ffb302;
+    outline: none; /* Added to remove outline */
 }
 
 .btn-primary:hover {
     background-color: #ffa600;
     border-color: #ffa600;
+    outline: none; /* Added to remove outline */
 }
 
 .links-section a {
     color: #007bff;
     text-decoration: none;
+    outline: none; /* Added to remove outline */
 }
 
 .links-section a:hover {
     text-decoration: underline;
+    outline: none; /* Added to remove outline */
 }
 
 .pet-images {
     margin-top: 20px;
     text-align: center;
+    outline: none; /* Added to remove outline */
 }
 
 .pet-images img {
@@ -56,4 +67,5 @@
     margin-bottom: 15px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    outline: none; /* Added to remove outline */
 }
