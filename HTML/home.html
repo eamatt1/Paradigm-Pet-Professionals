@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consultation Form</title>
+    <title>Comprehensive Care and Management of Small Pets</title>
     <!-- Bootstrap CSS Link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Link to your custom CSS -->
-    <link rel="stylesheet" href="../CSS/Consultation.css">
+    <link rel="stylesheet" href="../CSS/SmallPets.css">
     <style>
         /* Custom style for the logo */
         .logo img {
@@ -19,7 +19,7 @@
 
         /* Adjust the header to allow the logo to fit in the top left */
         header {
-            background-color: #808080; /* Gray color */
+            background-color: #003b6d; /* Matching header color */
             color: white;
             padding: 20px;
             display: flex;
@@ -45,9 +45,10 @@
 
         /* Footer Styling */
         footer {
-            background-color: #808080; /* Gray color */
+            background-color: #003b6d; /* Matching footer color */
             color: white;
             padding: 20px;
+            text-align: center;
         }
 
         footer a {
@@ -57,19 +58,39 @@
         footer a:hover {
             text-decoration: underline;
         }
+
+        .hero {
+            background-color: #ffb302;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        .container {
+            margin-top: 40px;
+        }
     </style>
 </head>
 
 <body>
 
-    <!-- Hero Section -->
+    <!-- Header Section -->
     <header class="p-4">
         <div class="logo">
             <img src="https://raw.githubusercontent.com/eamatt1/Pet-Professionals-Website/master/IMAGE/logo.jpeg" alt="Paradigm Pet Professionals Logo">
         </div>
         <div class="header-content">
             <h1>Paradigm Pet Professionals</h1>
-            <p>Consult with Experts for the Best Pet Care Advice</p>
+            <p>Comprehensive Care and Management of Small Pets</p>
         </div>
     </header>
 
@@ -97,91 +118,81 @@
         </div>
     </nav>
 
-    <!-- Main Content -->
-    <div class="container mt-5 text-center">
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#consultationModal">
-            Request Consultation
-        </button>
+    <!-- Hero Section -->
+    <div class="hero">
+        <h2>Comprehensive Care and Management of Small Pets</h2>
+        <p>Learn about how to care for small pets such as hamsters, guinea pigs, and more.</p>
     </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="consultationModal" tabindex="-1" aria-labelledby="consultationModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="consultationModalLabel">Consultation Form</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <!-- Main Content Section -->
+    <section id="content" class="container">
+        <h3>Overview of Small Pet Care and Management</h3>
+        <p>Small pets can make wonderful companions for those with limited space or time. These pets include animals such as hamsters, guinea pigs, gerbils, and more. Each pet has its own specific care requirements, from food to habitat, and we’re here to help you navigate their needs.</p>
+
+        <h3>Small Pet Resources</h3>
+        <ul>
+            <li><a href="https://www.animalhumanesociety.org/adoption/guinea-pig-care" target="_blank">Guinea Pig Care</a></li>
+            <li><a href="https://www.bluecross.org.uk/pet-advice/caring-your-mouse" target="_blank">Mouse Care</a></li>
+            <li><a href="https://pethermitcrabs.org/cage-habitat/" target="_blank">Hermit Crab Care</a></li>
+            <li><a href="https://chinchillacare.org/cage-habitat/" target="_blank">Chinchilla Care</a></li>
+            <li><a href="https://petgerbils.org/cage-habitat/" target="_blank">Gerbil Care</a></li>
+            <li><a href="https://www.pdsa.org.uk/taking-care-of-your-pet/looking-after-your-pet/small-pets/the-ideal-home-for-your-hamster" target="_blank">Hamster Care</a></li>
+        </ul>
+
+        <h3>Frequently Asked Questions</h3>
+        <div class="accordion" id="smallPetsFAQ">
+            <!-- Ferret Environment -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        What kind of environment does a ferret need?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#smallPetsFAQ">
+                    <div class="accordion-body">
+                        Ferrets need a large, secure cage with soft bedding, toys, and tunnels for stimulation. Keep the temperature between 60°F and 70°F. Provide a litter box and supervised playtime in a ferret-proof area. Regular interaction is essential for their well-being.
+                    </div>
                 </div>
-                <div class="modal-body">
-                    <form id="consultationForm" novalidate>
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <label for="firstName" class="form-label">First Name</label>
-                                <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
-                                <div class="invalid-feedback">First name is required.</div>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="lastName" class="form-label">Last Name</label>
-                                <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
-                                <div class="invalid-feedback">Last name is required.</div>
-                            </div>
-                        </div>
-                        <div class="mt-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="username@gmail.com" required>
-                            <div class="invalid-feedback">Please provide a valid email.</div>
-                        </div>
-                        <div class="row g-3 mt-3">
-                            <div class="col-md-6">
-                                <label for="timeZone" class="form-label">Time Zone</label>
-                                <select id="timeZone" class="form-select" required>
-                                    <option value="">Choose...</option>
-                                    <option value="EST">EST</option>
-                                    <option value="CST">CST</option>
-                                    <option value="PST">PST</option>
-                                </select>
-                                <div class="invalid-feedback">Please select a time zone.</div>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="petType" class="form-label">Pet Type</label>
-                                <select id="petType" class="form-select" required>
-                                    <option value="">Choose...</option>
-                                    <option value="Cat">Cat</option>
-                                    <option value="Dog">Dog</option>
-                                    <option value="Small Animal">Small Animal</option>
-                                    <option value="Other">Other</option>
-                                </select>
-                                <div class="invalid-feedback">Please select a pet type.</div>
-                            </div>
-                        </div>
-                        <div class="row g-3 mt-3">
-                            <div class="col-md-6">
-                                <label for="petName" class="form-label">Pet Name</label>
-                                <input type="text" class="form-control" id="petName" placeholder="Pet Name" required>
-                                <div class="invalid-feedback">Pet name is required.</div>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="petAge" class="form-label">Pet Age</label>
-                                <input type="number" class="form-control" id="petAge" placeholder="Pet Age" required>
-                                <div class="invalid-feedback">Pet age is required.</div>
-                            </div>
-                        </div>
-                        <div class="mt-3">
-                            <label for="subject" class="form-label">Subject (Optional)</label>
-                            <textarea class="form-control" id="subject" rows="4" placeholder="Provide any additional information or details you would like to share..."></textarea>
-                        </div>
-                    </form>
+            </div>
+
+            <!-- Guinea Pig Sleep -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        How much does a guinea pig sleep?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#smallPetsFAQ">
+                    <div class="accordion-body">
+                        Guinea pigs sleep around 4 to 6 hours daily but do not sleep in long stretches like humans. Instead, they take short naps during the day and at night, usually lasting only a few minutes. They are most active during the early morning and evening hours.
+                    </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary" id="saveChangesButton">Save changes</button>
+            </div>
+
+            <!-- Hedgehog Food -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        What kind of food does a hedgehog eat?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#smallPetsFAQ">
+                    <div class="accordion-body">
+                        Hedgehogs are omnivores and eat insects like mealworms, crickets, and beetles. You can also feed them high-quality commercial hedgehog food, which provides the right balance of nutrients. They can eat small amounts of fruits (like apples and berries) and vegetables (like peas and carrots). Avoid giving them dairy, chocolate, or processed human food, as these can be harmful. Fresh water should always be available.
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Small Pet Images Section -->
+    <section id="small-pets-images" class="container text-center my-5">
+        <h4>Meet Some of Our Adorable Small Pets</h4>
+        <img src="../IMAGE/SmallPets.jpeg" alt="Small Pets" class="img-fluid">
+    </section>
 
     <!-- Footer Section -->
-    <footer class="text-center p-4">
+    <footer class="p-4">
         <p>&copy; 2024 Paradigm Pet Professionals. All rights reserved.</p>
         <p>Follow us on <a href="https://facebook.com" class="text-white">Facebook</a> | <a href="https://twitter.com" class="text-white">Twitter</a> | <a href="https://instagram.com" class="text-white">Instagram</a></p>
     </footer>
