@@ -11,13 +11,31 @@ body {
 header {
     background-color: #003b6d;
     color: white;
-    padding: 20px;
-    text-align: center;
+    padding: 0;  /* Remove padding to fit logo snugly */
+    height: 100px;  /* Adjust height of the header to fit logo */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
+/* Header Logo Styling */
+.logo img {
+    height: 100%;  /* Make the logo fit the full height of the header */
+    width: auto;  /* Maintain aspect ratio */
+    margin: 0;
+    padding: 0;
+    object-fit: cover;  /* Ensure the logo covers the available space */
+}
+
+/* Header Title and Subtitle Styling */
 header h1 {
     margin: 0;
     font-size: 2.5rem;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.2rem;
 }
 
 /* Navigation Bar Styling */
@@ -30,9 +48,8 @@ nav {
     flex-wrap: wrap;
 }
 
-/* Logo Styling in Navbar */
 nav .logo img {
-    width: 80px; /* Set appropriate size for the logo */
+    width: 80px; /* Set appropriate size for the logo in the navbar */
     height: auto;
     margin-right: 15px;
 }
@@ -81,11 +98,11 @@ nav ul li a:hover {
 /* Logo Styling in the Hero Section */
 .hero .logo img {
     position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 80px;
-    height: auto;
-    z-index: 10; /* Make sure it appears above other elements */
+    top: 0;  /* Ensure no space at the top */
+    left: 0;  /* Align the logo to the left */
+    height: 100%;  /* Make the logo fill the height of the blue box */
+    width: auto;
+    z-index: 10; /* Ensure it appears above other elements */
 }
 
 .hero h2 {
