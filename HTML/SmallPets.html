@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comprehensive Care and Management of Small Pets</title>
     <!-- Bootstrap CSS Link -->
@@ -10,16 +11,54 @@
     <!-- Link to your custom CSS -->
     <link rel="stylesheet" href="../CSS/SmallPets.css">
     <style>
-        /* Gray background for header and footer */
+        /* Gray background for hero section and footer */
         .hero {
-            background-color: #808080; /* Gray color for top box */
+            background-color: #808080;
             color: white;
+            padding: 50px 0;
             text-align: center;
-            padding: 20px;
         }
 
+        /* Gray color for navigation bar links and buttons */
+        .navbar-light .navbar-nav .nav-link,
+        .navbar-light .navbar-brand,
+        .btn-outline-primary {
+            color: #808080;
+        }
+
+        .navbar-light .navbar-nav .nav-link:hover,
+        .navbar-light .navbar-brand:hover,
+        .btn-outline-primary:hover {
+            color: #666666;
+        }
+
+        .navbar-light .navbar-toggler {
+            border-color: #808080;
+        }
+
+        /* Gray background for accordion button and text */
+        .accordion-button {
+            background-color: #e0e0e0;
+            color: #808080;
+        }
+
+        .accordion-button:hover {
+            background-color: #d0d0d0;
+        }
+
+        /* Gray color for accordion headers and body text */
+        .accordion-header,
+        .accordion-body {
+            color: #808080;
+        }
+
+        .accordion-item {
+            border-color: #808080;
+        }
+
+        /* Gray background and color for footer */
         footer {
-            background-color: #808080; /* Gray color for footer */
+            background-color: #808080;
             color: white;
             padding: 20px;
         }
@@ -32,140 +71,117 @@
             text-decoration: underline;
         }
 
-        /* Gray color for links and buttons */
-        .navbar-nav .nav-link,
-        .accordion-button,
-        .btn-outline-primary,
-        .accordion-header {
-            color: #808080; /* Gray */
-        }
-
-        .navbar-nav .nav-link:hover,
-        .accordion-button:hover,
-        .btn-outline-primary:hover {
-            color: #666666; /* Darker gray */
-        }
-
-        .accordion-button {
-            background-color: #e0e0e0; /* Light gray for accordion buttons */
-        }
-
-        .accordion-button:focus {
-            box-shadow: none; /* Remove blue focus border */
-        }
-
-        .accordion-item {
-            border-color: #808080; /* Gray border for accordion */
-        }
-
-        /* Form input, buttons, and hover colors */
-        .form-control,
-        .form-select,
-        .btn-outline-primary {
-            border-color: #808080; /* Gray */
-            color: #808080;
-        }
-
-        .form-control::placeholder {
-            color: #808080; /* Gray placeholder */
-        }
-
-        .form-control:focus,
-        .form-select:focus {
-            border-color: #808080;
-            box-shadow: none; /* Remove blue outline */
-        }
     </style>
 </head>
 
 <body>
 
-<!-- Hero Section -->
-<div class="hero text-white text-center py-5">
-    <h2>Comprehensive Care and Management of Small Pets</h2>
-    <p>Learn about how to care for small pets such as hamsters, guinea pigs, and more.</p>
-</div>
-
-<!-- Main Content Section -->
-<section id="content" class="container my-5">
-    <h3 style="color: #808080;">Overview of Small Pet Care and Management</h3>
-    <p style="color: #808080;">Small pets can make wonderful companions for those with limited space or time. These pets include animals such as hamsters, guinea pigs, gerbils, and more. Each pet has its own specific care requirements, from food to habitat, and we’re here to help you navigate their needs.</p>
-
-    <h3 style="color: #808080;">Small Pet Resources</h3>
-    <ul>
-        <li><a href="https://www.animalhumanesociety.org/adoption/guinea-pig-care" target="_blank" style="color: #808080;">Guinea Pig Care</a></li>
-        <li><a href="https://www.bluecross.org.uk/pet-advice/caring-your-mouse" target="_blank" style="color: #808080;">Mouse Care</a></li>
-        <li><a href="https://pethermitcrabs.org/cage-habitat/" target="_blank" style="color: #808080;">Hermit Crab Care</a></li>
-        <li><a href="https://chinchillacare.org/cage-habitat/" target="_blank" style="color: #808080;">Chinchilla Care</a></li>
-        <li><a href="https://petgerbils.org/cage-habitat/" target="_blank" style="color: #808080;">Gerbil Care</a></li>
-        <li><a href="https://www.pdsa.org.uk/taking-care-of-your-pet/looking-after-your-pet/small-pets/the-ideal-home-for-your-hamster" target="_blank" style="color: #808080;">Hamster Care</a></li>
-    </ul>
-
-    <h3 style="color: #808080;">Frequently Asked Questions</h3>
-    <div class="accordion" id="smallPetsFAQ">
-        <!-- Ferret Environment -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    What kind of environment does a ferret need?
-                </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#smallPetsFAQ">
-                <div class="accordion-body" style="color: #808080;">
-                    Ferrets need a large, secure cage with soft bedding, toys, and tunnels for stimulation. Keep the temperature between 60°F and 70°F. Provide a litter box and supervised playtime in a ferret-proof area. Regular interaction is essential for their well-being.
-                </div>
-            </div>
-        </div>
-
-        <!-- Guinea Pig Sleep -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    How much does a guinea pig sleep?
-                </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#smallPetsFAQ">
-                <div class="accordion-body" style="color: #808080;">
-                    Guinea pigs sleep around 4 to 6 hours daily but do not sleep in long stretches like humans. Instead, they take short naps during the day and at night, usually lasting only a few minutes. They are most active during the early morning and evening hours.
-                </div>
-            </div>
-        </div>
-
-        <!-- Hedgehog Food -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    What kind of food does a hedgehog eat?
-                </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#smallPetsFAQ">
-                <div class="accordion-body" style="color: #808080;">
-                    Hedgehogs are omnivores and eat insects like mealworms, crickets, and beetles. You can also feed them high-quality commercial hedgehog food, which provides the right balance of nutrients. They can eat small amounts of fruits (like apples and berries) and vegetables (like peas and carrots). Avoid giving them dairy, chocolate, or processed human food, as these can be harmful. Fresh water should always be available.
-                </div>
-            </div>
-        </div>
+    <!-- Hero Section -->
+    <div class="hero text-white text-center py-5">
+        <h2>Comprehensive Care and Management of Small Pets</h2>
+        <p>Learn about how to care for small pets such as hamsters, guinea pigs, and more.</p>
     </div>
-</section>
 
-<!-- Small Pet Images Section -->
-<section id="small-pets-images" class="container my-5 text-center">
-    <h4 style="color: #808080;">Meet Some of Our Adorable Small Pets</h4>
-    <img src="../IMAGE/SmallPets.jpeg" alt="Small Pets" class="img-fluid">
-</section>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="Consultation.html">Consultation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Cats.html">Cats</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Dogs.html">Dogs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Birds.html">Birds</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Fish.html">Fish</a></li>
+                    <li class="nav-item"><a class="nav-link" href="SmallPets.html">Small Pets</a></li>
+                </ul>
+                <form class="d-flex ms-auto">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
 
-<!-- Footer Section -->
-<footer class="text-white text-center p-4">
-    <p>&copy; 2024 Paradigm Pet Professionals. All rights reserved.</p>
-    <p>Follow us on 
-        <a href="https://facebook.com" class="text-white">Facebook</a> | 
-        <a href="https://twitter.com" class="text-white">Twitter</a> | 
-        <a href="https://instagram.com" class="text-white">Instagram</a>
-    </p>
-</footer>
+    <!-- Main Content Section -->
+    <section id="content" class="container my-5">
+        <h3 style="color: #808080;">Overview of Small Pet Care and Management</h3>
+        <p style="color: #808080;">Small pets can make wonderful companions for those with limited space or time. These pets include animals such as hamsters, guinea pigs, gerbils, and more. Each pet has its own specific care requirements, from food to habitat, and we’re here to help you navigate their needs.</p>
 
-<!-- Bootstrap JS and Popper.js -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+        <h3 style="color: #808080;">Small Pet Resources</h3>
+        <ul>
+            <li><a href="https://www.animalhumanesociety.org/adoption/guinea-pig-care" target="_blank" style="color: #808080;">Guinea Pig Care</a></li>
+            <li><a href="https://www.bluecross.org.uk/pet-advice/caring-your-mouse" target="_blank" style="color: #808080;">Mouse Care</a></li>
+            <li><a href="https://pethermitcrabs.org/cage-habitat/" target="_blank" style="color: #808080;">Hermit Crab Care</a></li>
+            <li><a href="https://chinchillacare.org/cage-habitat/" target="_blank" style="color: #808080;">Chinchilla Care</a></li>
+            <li><a href="https://petgerbils.org/cage-habitat/" target="_blank" style="color: #808080;">Gerbil Care</a></li>
+            <li><a href="https://www.pdsa.org.uk/taking-care-of-your-pet/looking-after-your-pet/small-pets/the-ideal-home-for-your-hamster" target="_blank" style="color: #808080;">Hamster Care</a></li>
+        </ul>
+
+        <h3 style="color: #808080;">Frequently Asked Questions</h3>
+        <div class="accordion" id="smallPetsFAQ">
+            <!-- Ferret Environment -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        What kind of environment does a ferret need?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#smallPetsFAQ">
+                    <div class="accordion-body" style="color: #808080;">
+                        Ferrets need a large, secure cage with soft bedding, toys, and tunnels for stimulation. Keep the temperature between 60°F and 70°F. Provide a litter box and supervised playtime in a ferret-proof area. Regular interaction is essential for their well-being.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Guinea Pig Sleep -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        How much does a guinea pig sleep?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#smallPetsFAQ">
+                    <div class="accordion-body" style="color: #808080;">
+                        Guinea pigs sleep around 4 to 6 hours daily but do not sleep in long stretches like humans. Instead, they take short naps during the day and at night, usually lasting only a few minutes. They are most active during the early morning and evening hours.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hedgehog Food -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        What kind of food does a hedgehog eat?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#smallPetsFAQ">
+                    <div class="accordion-body" style="color: #808080;">
+                        Hedgehogs are omnivores and eat insects like mealworms, crickets, and beetles. You can also feed them high-quality commercial hedgehog food, which provides the right balance of nutrients. They can eat small amounts of fruits (like apples and berries) and vegetables (like peas and carrots). Avoid giving them dairy, chocolate, or processed human food, as these can be harmful. Fresh water should always be available.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Small Pet Images Section -->
+    <section id="small-pets-images" class="container my-5 text-center">
+        <h4 style="color: #808080;">Meet Some of Our Adorable Small Pets</h4>
+        <img src="../IMAGE/SmallPets.jpeg" alt="Small Pets" class="img-fluid">
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="text-white text-center p-4">
+        <p>&copy; 2024 Paradigm Pet Professionals. All rights reserved.</p>
+        <p>Follow us on <a href="https://facebook.com" class="text-white">Facebook</a> | <a href="https://twitter.com" class="text-white">Twitter</a> | <a href="https://instagram.com" class="text-white">Instagram</a></p>
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
 
 </body>
 
