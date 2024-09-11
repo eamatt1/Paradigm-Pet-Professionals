@@ -26,12 +26,13 @@
     display: none;
 }
 
+/* Gray color for primary buttons */
 .btn-primary {
-    background-color: #ffb302;
-    border-color: #ffb302;
+    background-color: #808080; /* Gray color */
+    border-color: #808080;
 }
 
 .btn-primary:hover {
-    background-color: #ffa600;
-    border-color: #ffa600;
+    background-color: #696969; /* Darker Gray on hover */
+    border-color: #696969;
 }
