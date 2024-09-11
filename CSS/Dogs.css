@@ -9,8 +9,8 @@ body {
 }
 
 .section h4 {
-    background-color: #000;
-    color: #fff;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
     padding: 10px;
 }
 
@@ -21,7 +21,7 @@ body {
 
 /* Hero Section Styling */
 .hero {
-    background-color: #003b6d; /* Same color as footer */
+    background-color: #808080; /* Replaced blue with gray */
     color: white;
     padding: 50px 20px;
     text-align: center;
