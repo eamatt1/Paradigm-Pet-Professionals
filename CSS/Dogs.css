@@ -1,37 +1,25 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+/* Change background and text color for collapsed and expanded accordion buttons */
+
+/* Collapsed state (default) */
+.accordion-button {
+    background-color: #808080; /* Gray background */
+    color: white; /* White text */
 }
 
-.section {
-    margin: 30px 0;
+/* Hover effect when the accordion button is collapsed */
+.accordion-button:hover {
+    background-color: #696969; /* Lighter gray on hover */
+    color: white; /* Keep text white */
 }
 
-.section h4 {
-    background-color: #000; /* Black background */
-    color: #fff; /* White text */
-    padding: 10px;
+/* Expanded state */
+.accordion-button:not(.collapsed) {
+    background-color: #555555; /* Darker gray for expanded state */
+    color: white; /* White text */
 }
 
-.pet-images img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Hero Section Styling */
-.hero {
-    background-color: #808080; /* Replaced blue with gray */
-    color: white;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.hero h2 {
-    margin-bottom: 10px;
-    font-size: 2.5rem;
-}
-
-.hero p {
-    font-size: 1.2rem;
+/* Hover effect when the accordion button is expanded */
+.accordion-button:not(.collapsed):hover {
+    background-color: #696969; /* Lighter gray on hover */
+    color: white; /* Keep text white */
 }
