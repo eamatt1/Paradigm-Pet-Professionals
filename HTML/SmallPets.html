@@ -35,14 +35,14 @@
         /* Gray color for links and buttons */
         .navbar-nav .nav-link,
         .accordion-button,
-        .btn-outline-primary,
+        .btn-outline-secondary,
         .accordion-header {
             color: #808080; /* Gray */
         }
 
         .navbar-nav .nav-link:hover,
         .accordion-button:hover,
-        .btn-outline-primary:hover {
+        .btn-outline-secondary:hover {
             color: #666666; /* Darker gray */
         }
 
@@ -66,7 +66,7 @@
         /* Form input, buttons, and hover colors */
         .form-control,
         .form-select,
-        .btn-outline-primary {
+        .btn-outline-secondary {
             border-color: #808080; /* Gray */
             color: #808080;
         }
@@ -85,6 +85,20 @@
         /* FAQ Header in Gray */
         h3 {
             color: #808080; /* Gray color for FAQ heading */
+        }
+
+        /* Removing hover blue color on click */
+        .accordion-button:not(.collapsed) {
+            background-color: #808080; /* Keep background gray when expanded */
+            color: white !important; /* White text when expanded */
+            box-shadow: none !important; /* Remove the blue shadow */
+        }
+
+        /* Removing blue outline on focus for accordion buttons */
+        .accordion-button:focus {
+            box-shadow: none !important;
+            background-color: #808080 !important; /* Keep background gray */
+            color: white !important;
         }
     </style>
 </head>
@@ -115,7 +129,7 @@
             </ul>
             <form class="d-flex ms-auto">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-primary" type="submit">Search</button>
+                <button class="btn btn-outline-secondary" type="submit">Search</button>
             </form>
         </div>
     </div>
