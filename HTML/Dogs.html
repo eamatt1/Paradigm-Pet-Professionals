@@ -48,18 +48,28 @@
     .accordion-button {
         background-color: #808080; /* Gray */
         color: white;
+        border: none; /* Remove default border */
     }
 
     .accordion-button:not(.collapsed) {
         background-color: #555; /* Darker gray when expanded */
     }
 
-    /* Hover and focus styles */
+    /* Hover, focus, and active styles */
     .accordion-button:hover, 
-    .accordion-button:focus {
+    .accordion-button:focus,
+    .accordion-button:active {
         color: white;
-        background-color: #666; /* Medium gray on hover/focus */
-        box-shadow: none; /* Remove any blue shadow */
+        background-color: #666; /* Medium gray on hover/focus/active */
+        box-shadow: none; /* Remove blue shadow */
+        border-color: #666; /* Remove blue border on focus */
+    }
+
+    /* Ensure no blue outline or border appears */
+    .accordion-button:focus-visible {
+        outline: none;
+        box-shadow: none; /* Ensure no focus blue shadow */
+        border-color: none;
     }
 
     /* Footer Styling */
@@ -81,6 +91,7 @@
         color: #808080;
     }
 </style>
+
 
 </head>
 
