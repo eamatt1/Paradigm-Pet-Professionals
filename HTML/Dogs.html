@@ -65,11 +65,37 @@
         border-color: #666; /* Remove blue border on focus */
     }
 
+    /* Link color inside the accordion (for those headers) */
+    .accordion-button:focus-visible,
+    .accordion-button:focus,
+    .accordion-button:active {
+        outline: none;
+        color: white; /* Keep text white */
+        background-color: #666; /* Gray when focused */
+        box-shadow: none; /* Remove blue shadow */
+    }
+
     /* Ensure no blue outline or border appears */
     .accordion-button:focus-visible {
         outline: none;
         box-shadow: none; /* Ensure no focus blue shadow */
         border-color: none;
+    }
+
+    /* Override link color during click inside accordion headers */
+    .accordion-button:focus .accordion-header,
+    .accordion-button:active .accordion-header {
+        color: #808080 !important; /* Gray color when clicked */
+    }
+
+    /* Override link text color during hover, focus, or click */
+    .accordion-button:focus-visible,
+    .accordion-button:hover,
+    .accordion-button:focus,
+    .accordion-button:active {
+        color: white; /* Keep text gray/white */
+        background-color: #666; /* Darker gray on hover/focus/active */
+        box-shadow: none; /* Remove blue shadow */
     }
 
     /* Footer Styling */
