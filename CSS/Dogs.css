@@ -1,108 +1,25 @@
-<style>
-    /* Hero Section Styling */
-    .hero {
-        background-color: #808080; /* Changed to gray */
-        color: white;
-        padding: 50px 0;
-        text-align: center;
-        position: relative;
-    }
+/* Change background and text color for collapsed and expanded accordion buttons */
 
-    /* Navigation Bar Styling */
-    nav {
-        margin-top: 0;
-    }
+/* Collapsed state (default) */
+.accordion-button {
+    background-color: #808080; /* Gray background */
+    color: white; /* White text */
+}
 
-    /* Change link colors to gray */
-    .navbar-light .navbar-nav .nav-link {
-        color: #808080; /* Gray */
-    }
+/* Hover effect when the accordion button is collapsed */
+.accordion-button:hover {
+    background-color: #696969; /* Lighter gray on hover */
+    color: white; /* Keep text white */
+}
 
-    .navbar-light .navbar-nav .nav-link:hover {
-        color: #555; /* Darker gray on hover */
-    }
+/* Expanded state */
+.accordion-button:not(.collapsed) {
+    background-color: #555555; /* Darker gray for expanded state */
+    color: white; /* White text */
+}
 
-    /* Search button and input field */
-    .btn-outline-primary {
-        color: #808080;
-        border-color: #808080;
-    }
-
-    .btn-outline-primary:hover {
-        color: white;
-        background-color: #808080;
-    }
-
-    /* Accordion heading color */
-    .accordion-button {
-        background-color: #808080; /* Gray */
-        color: white;
-        border: none; /* Remove default border */
-    }
-
-    .accordion-button:not(.collapsed) {
-        background-color: #555; /* Darker gray when expanded */
-    }
-
-    /* Hover, focus, and active styles */
-    .accordion-button:hover, 
-    .accordion-button:focus,
-    .accordion-button:active {
-        color: white;
-        background-color: #666; /* Medium gray on hover/focus/active */
-        box-shadow: none; /* Remove blue shadow */
-        border-color: #666; /* Remove blue border on focus */
-    }
-
-    /* Remove blue color when focused or clicked */
-    .accordion-button:focus-visible,
-    .accordion-button:focus,
-    .accordion-button:active {
-        outline: none;
-        color: white; /* Keep text white */
-        background-color: #666; /* Gray when focused */
-        box-shadow: none; /* Remove blue shadow */
-    }
-
-    /* Override blue link color when clicked */
-    .accordion-button:focus-visible, 
-    .accordion-button:visited, 
-    .accordion-button:active {
-        color: white !important; /* Keep text white */
-        background-color: #666 !important; /* Keep gray background */
-        outline: none !important;
-        box-shadow: none !important;
-    }
-
-    /* Ensure no blue outline or border appears */
-    .accordion-button:focus-visible {
-        outline: none;
-        box-shadow: none; /* Ensure no focus blue shadow */
-        border-color: none;
-    }
-
-    /* Remove link color and background when clicked */
-    .accordion-button:focus .accordion-header,
-    .accordion-button:active .accordion-header {
-        color: #808080 !important; /* Gray color when clicked */
-    }
-
-    /* Footer Styling */
-    footer {
-        background-color: #808080; /* Gray */
-        color: white;
-        padding: 20px;
-    }
-
-    footer a {
-        color: white;
-    }
-
-    footer a:hover {
-        text-decoration: underline;
-    }
-
-    h3, h4 {
-        color: #808080;
-    }
-</style>
+/* Hover effect when the accordion button is expanded */
+.accordion-button:not(.collapsed):hover {
+    background-color: #696969; /* Lighter gray on hover */
+    color: white; /* Keep text white */
+}
