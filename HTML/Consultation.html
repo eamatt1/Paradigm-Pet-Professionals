@@ -2,6 +2,31 @@
 <html lang="en">
 
 <head>
+    <head>
+    <style>
+        /* Make all buttons the same size and color */
+        .navbar-nav .nav-link,
+        .navbar-brand {
+            font-size: 20px; /* Set uniform size */
+            font-weight: bold; /* Ensure all buttons are bold */
+            color: #000000; /* Set the color to dark black */
+            padding: 10px 20px; /* Add padding to make the buttons appear larger */
+        }
+
+        /* Change the background and text color when the buttons are clicked or active */
+        .navbar-nav .nav-link:active,
+        .navbar-nav .nav-link:focus,
+        .navbar-nav .nav-link:visited,
+        .navbar-nav .nav-link.active,
+        .navbar-brand:active,
+        .navbar-brand:focus,
+        .navbar-brand:visited,
+        .navbar-brand.active {
+            color: #000000; /* Keep dark black */
+        }
+    </style>
+</head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
